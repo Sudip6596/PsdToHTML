@@ -1,0 +1,186 @@
+@font-face {
+  font-family: AgencyFB;
+  src: url(AgencyFB-Bold.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1d32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 57vw;
+}
+
+.images {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.box {
+  background: white;
+  height: 130px;
+
+  display: flex;
+  flex-direction: column;
+}
+.img-container {
+  height: 75%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+h3 {
+  font-family: AgencyFB;
+  font-size: x-small;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+.salami {
+  background-color: #3dd0d8;
+}
+.meatball {
+  background-color: #5c9ddd;
+}
+.sausage {
+  background-color: #7c69e3;
+}
+.comment-section {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 1.3rem;
+  background-color: #292845;
+  border-radius: 5px;
+}
+h2 {
+  font-family: AgencyFB;
+  font-size: small;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+.comment {
+  margin-top: 0.8rem;
+  display: flex;
+  min-width: 100%;
+  gap: 1rem;
+}
+
+.img {
+  height: 30px;
+  width: 30px;
+  background-color: #3a3630;
+  border-radius: 50%;
+}
+
+.details {
+  max-width: 87%;
+  margin-top: 0.3rem;
+}
+
+.date-reply {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6px;
+  color: white;
+  color: #c2d4f8;
+  letter-spacing: 0.05rem;
+}
+.reply {
+  color: #3dd0d8;
+}
+.light {
+  color: #337c8f;
+}
+.user-comment {
+  font-size: 8.5px;
+  color: #aebde0;
+  letter-spacing: 0;
+  font-weight: 100;
+  margin-top: 0.5rem;
+}
+
+.comment-heading {
+  margin-top: 1rem;
+}
+.name_email_subject {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.input {
+  background-color: #181728;
+  padding: 0.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 7px;
+  letter-spacing: 0.5px;
+
+  font-style: italic;
+  color: #c2d4f8;
+}
+.input-comment {
+  margin-top: 0.5rem;
+  background-color: #181728;
+  padding: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 7px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  color: #c2d4f8;
+  height: 5rem;
+}
+
+.btn {
+  margin-top: 0.6rem;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #66e0e4, #a875ee);
+  border: none;
+  font-size: xx-small;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
+  .comment-section {
+    min-height: 65vh;
+  }
+  .user-comment {
+    font-size: 5.5px;
+  }
+}
